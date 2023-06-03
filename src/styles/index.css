@@ -1,12 +1,75 @@
+button {
+    color: black;
+    background-color: #ffffff;
+    display: flex;
+    padding: 0;
+    font-size: 30px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
 
-/* 
+button:hover {
+    color: red;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+button:active {
+    color: rgb(255, 66, 66);
+}
 
-*/
+/*  ---------------------------------------------------  */
+/* color de la lista  */
+.listaCancion {
+    color: white;
+    background-color: #2f2f2f;
+}
+
+.listaCancion:hover {
+    color: white;
+    background-color: #3f3f3f;
+}
+
+.listaCancion:active {
+    color: white;
+    background-color: #1f1f1f;
+}
+
+/*  ---------------------------------------------------  */
+/*  HUD  */
+
+.colorHUD {
+    color: white;
+    background-color: #2f2f2f;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: red;
+}
+
+/*  ---------------------------------------------------  */
+/*  Lista scroll  */
+
+.listaScroll {
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2f2f2f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
